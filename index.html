@@ -1,1 +1,28 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>这里是p={{message}}</p>
+    <div id="#app" class="app">
+       这里是div={{message}}
+    </div>
+    <!-- (1)对于制作原型或学习，你可以这样使用最新版本： 导入包开发版本Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    
+</body>
+</html>
+<script>
+    var app = new Vue({
+        el:"#app",//id的选择器
+        // el:".apps",//类选择器
+        // el:"div",//标签选择器
+        data: {
+            message: "小小梁的el"
+        }
+    })
+</script>
